@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/q.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div
+      class="theme-font-montserrat theme-color-white-blue"
+      style="width: 100%; height: 100%;"
+    >
+      <div class="reveal">
+        <div class="slides">
+          <section class="stack">
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 727px; left: 277px; top: 335px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 11;"
+                >
+                  <h3>Pilotando sua infra na nuvem</h3>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 711px; left: 285px; top: 220px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(50, 108, 229);"
+                >
+                  <h1>
+                    <span style="font-size:1.4em"
+                      ><strong>Kubernetes</strong></span
+                    >
+                  </h1>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 164px; height: 159px; left: 546px; top: 72px;"
+              >
+                <div class="sl-block-content" style="z-index: 13;">
+                  <img
+                    style=""
+                    data-natural-width="723"
+                    data-natural-height="702"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6784338/logo.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 294px; left: 493px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 11;"
+                >
+                  <h1 style="text-align: left;">Quem</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 52px; height: 88px; left: 735px; top: 23px;"
+              >
+                <div class="sl-block-content" style="z-index: 12;">
+                  <img
+                    style=""
+                    data-natural-width="52"
+                    data-natural-height="88"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6784340/Question.svg"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 340px; top: 300px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 13; color: rgb(115, 115, 128);"
+                  dir="ui"
+                >
+                  <h3>SRE &nbsp; &nbsp; Rocketseat</h3>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 157px; left: 601px; top: 629px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 14; color: rgb(115, 115, 128); text-align: left;"
+                >
+                  <p>
+                    <strong
+                      >/<span style="font-size:0.9em">pellizzetti</span></strong
+                    >
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 34px; height: 42px; left: 830px; top: 304px;"
+              >
+                <div class="sl-block-content" style="z-index: 15;">
+                  <img
+                    style=""
+                    data-natural-width="18"
+                    data-natural-height="22"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6784378/Rocketseat.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 563px; top: 635px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 16;"
+                  data-inline-svg="false"
+                >
+                  <img
+                    style=""
+                    data-natural-width="24"
+                    data-natural-height="24"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6784374/Linkedin_1_.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 523px; top: 635px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 17;"
+                  data-inline-svg="false"
+                >
+                  <img
+                    style=""
+                    data-natural-width="24"
+                    data-natural-height="24"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6784371/Github_1_.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 44px; left: 548px; top: 297px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 18; color: rgb(50, 108, 229);"
+                  dir="ui"
+                >
+                  <h3>@</h3>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 607px; left: 337px; top: 216px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 19; color: rgb(115, 115, 128);"
+                >
+                  <h2><strong>Guilherme Pellizzetti</strong></h2>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 160px; height: 160px; left: 560px; top: 424px;"
+              >
+                <div class="sl-block-content" style="z-index: 20;">
+                  <img
+                    style=""
+                    data-natural-width="113"
+                    data-natural-height="113"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6790538/WhatsApp_Image_2019-10-30_at_18.26_1_1_.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 631px; left: 325px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 11;"
+                >
+                  <h1 style="text-align:left">Apresentação</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 663px; left: 309px; top: 317px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(115, 115, 128); line-height: 1.43;"
+                  dir="ui"
+                  data-has-line-height=""
+                >
+                  <pre><a href="https://k8s.rocketseat.dev" target="_blank"><span style="font-size:2.0em">k8s.rocketseat.dev</span></a></pre>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 93px; height: 87px; left: 863px; top: 29px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 14;"
+                  data-inline-svg="false"
+                >
+                  <img
+                    style=""
+                    data-natural-width="128"
+                    data-natural-height="120"
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6802034/Workshop.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 663px; left: 309px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align:left">Requerimentos</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 652px; left: 201px; top: 144px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 11; color: rgb(115, 115, 128); line-height: 1.43;"
+                  dir="ui"
+                  data-has-line-height=""
+                >
+                  <ul>
+                    <li>
+                      Docker
+                      <ul>
+                        <li>
+                          <a
+                            href="https://docs.docker.com/install/linux/docker-ce/centos/"
+                            target="_blank"
+                            >Unix</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://docs.docker.com/docker-for-mac/install/"
+                            target="_blank"
+                            >OSX</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="https://kubernetes.io/docs/tasks/tools/install-kubectl/"
+                        target="_blank"
+                        >Kubectl</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://kubernetes.io/docs/tasks/tools/install-minikube/"
+                        target="_blank"
+                        >Minikube</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="width: 63px; height: 87px; left: 909px; top: 23px; min-width: 4px; min-height: 4px;"
+              >
+                <div class="sl-block-content" style="z-index: 12;">
+                  <img
+                    style=""
+                    data-natural-width="72"
+                    data-natural-height="100"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6801894/Checklist.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 441px; left: 420px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align: left;">Itinerário</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 441px; left: 420px; top: 144px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 11; color: rgb(115, 115, 128); line-height: 1.43;"
+                  dir="ui"
+                  data-has-line-height=""
+                >
+                  <ul>
+                    <li style="text-align:left">
+                      Conceitos
+                      <ul>
+                        <li style="text-align:left">Introdução</li>
+                        <li style="text-align:left">Componentes</li>
+                        <li style="text-align:left">Kubernetes API</li>
+                      </ul>
+                    </li>
+                    <li style="text-align:left">
+                      Hands-on
+                      <ul>
+                        <li style="text-align:left">DockerFile</li>
+                        <li style="text-align:left">
+                          App in Pod
+                          <ul>
+                            <li style="text-align:left">Expondo aplicação</li>
+                          </ul>
+                        </li>
+                        <li style="text-align:left">
+                          Deployment
+                          <ul>
+                            <li style="text-align:left">Service</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li style="text-align:left">Conclusão</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="width: 88px; height: 90px; left: 773px; top: 23px; min-width: 4px; min-height: 4px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12;"
+                  data-inline-svg="false"
+                >
+                  <img
+                    style=""
+                    data-natural-width="56"
+                    data-natural-height="57"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6790414/Itinerary.svg"
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="stack">
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 562px; left: 359px; top: 176px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 11; line-height: 0.975;"
+                  data-has-line-height=""
+                >
+                  <ul>
+                    <li>
+                      <pre>O que é?</pre>
+                    </li>
+                    <li>
+                      <pre>Por que usar?</pre>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 515px; top: 23px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(50, 108, 229);"
+                >
+                  <h1 style="text-align: left;">K8s</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 89px; height: 86px; left: 670px; top: 23px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 13;"
+                  data-inline-svg="false"
+                >
+                  <img
+                    style=""
+                    data-natural-width="723"
+                    data-natural-height="702"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6784338/logo.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 572px; height: 429px; left: 349px; top: 278px;"
+              >
+                <div class="sl-block-content" style="z-index: 14;">
+                  <img
+                    style=""
+                    data-natural-width="800"
+                    data-natural-height="600"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6790923/skibgifmov.gif"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="shape"
+                style="min-width: 4px; min-height: 4px; width: 1594px; height: 235px; left: -1055px; top: 618px;"
+              >
+                <div
+                  class="sl-block-content"
+                  data-shape-type="rect"
+                  data-shape-fill-color="rgb(0, 181, 229)"
+                  data-shape-stretch="true"
+                  style="z-index: 15;"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="100%"
+                    height="100%"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 1594 235"
+                  >
+                    <rect
+                      width="1594"
+                      height="235"
+                      rx="0"
+                      ry="0"
+                      class="shape-element"
+                      fill="rgb(0, 181, 229)"
+                    ></rect>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="shape"
+                style="min-width: 4px; min-height: 4px; width: 1305px; height: 156px; left: -12px; top: 697px;"
+              >
+                <div
+                  class="sl-block-content"
+                  data-shape-type="rect"
+                  data-shape-fill-color="rgb(0, 181, 229)"
+                  data-shape-stretch="true"
+                  style="z-index: 16;"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="100%"
+                    height="100%"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 1305 156"
+                  >
+                    <rect
+                      width="1305"
+                      height="156"
+                      rx="0"
+                      ry="0"
+                      class="shape-element"
+                      fill="rgb(0, 181, 229)"
+                    ></rect>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="shape"
+                style="min-width: 4px; min-height: 4px; width: 1594px; height: 235px; left: 759px; top: 618px;"
+              >
+                <div
+                  class="sl-block-content"
+                  data-shape-type="rect"
+                  data-shape-fill-color="rgb(0, 181, 229)"
+                  data-shape-stretch="true"
+                  style="z-index: 17;"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="100%"
+                    height="100%"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 1594 235"
+                  >
+                    <rect
+                      width="1594"
+                      height="235"
+                      rx="0"
+                      ry="0"
+                      class="shape-element"
+                      fill="rgb(0, 181, 229)"
+                    ></rect>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 2791px; height: 2791px; left: -755px; top: -1179px;"
+              >
+                <div class="sl-block-content" style="z-index: 10;">
+                  <img
+                    style=""
+                    data-natural-width="200"
+                    data-natural-height="200"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6799813/Rectangle_1_2_.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 540px; left: 370px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 11;"
+                >
+                  <h1 style="text-align:left">Arquitetura</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 673px; height: 576px; left: 367px; top: 144px;"
+              >
+                <div class="sl-block-content" style="z-index: 13;">
+                  <img
+                    style=""
+                    data-natural-width="626"
+                    data-natural-height="536"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6791619/Cluster_2_.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 93px; height: 89px; left: 817px; top: 27px;"
+              >
+                <div class="sl-block-content" style="z-index: 14;">
+                  <img
+                    style=""
+                    data-natural-width="134"
+                    data-natural-height="128"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6801988/Architecture.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 681px; left: 300px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align:left">Kubernetes API</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 86px; height: 89px; left: 895px; top: 28px;"
+              >
+                <div class="sl-block-content" style="z-index: 11;">
+                  <img
+                    style=""
+                    data-natural-width="58"
+                    data-natural-height="60"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6791700/API.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 814px; left: 266px; top: 144px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 13; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <ol>
+                    <li>
+                      <strong>Workloads: </strong>Gerencia containers e seu
+                      ciclo de vida;
+                    </li>
+                    <li>
+                      <strong>Discovery &amp; Load Balancing: </strong>Expõe sua
+                      aplicação, tanto internamente, como externamente;
+                    </li>
+                    <li>
+                      <strong>Config &amp; Storage: </strong>Atrela dados aos
+                      containers;
+                    </li>
+                    <li>
+                      <strong>Metadata: </strong>Ajusta/Altera o comportamento
+                      de outros objetos;
+                    </li>
+                    <li>
+                      <strong>Cluster: </strong>Gerencia o estado geral do
+                      cluster e sua configuração.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 681px; left: 300px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align:left">Kubernetes API</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="width: 86px; height: 89px; left: 895px; top: 28px; min-width: 4px; min-height: 4px;"
+              >
+                <div class="sl-block-content" style="z-index: 11;">
+                  <img
+                    style=""
+                    data-natural-width="58"
+                    data-natural-height="60"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6791700/API.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 475px; left: 323px; top: 149px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <ul>
+                    <li>
+                      <pre><strong>Pod</strong></pre>
+                    </li>
+                    <li>
+                      <pre><strong>Service</strong></pre>
+                    </li>
+                    <li>
+                      <pre><strong>Volume</strong></pre>
+                    </li>
+                    <li>
+                      <pre><strong>HorizontalPodAutoscaler</strong></pre>
+                    </li>
+                    <li>
+                      <pre><strong>Namespace</strong></pre>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 635px; left: 322px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align: left;">Componentes</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 340px; top: 121px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(115, 115, 128);"
+                >
+                  <h3>Master</h3>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 597px; left: 325px; top: 216px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 13; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <ul>
+                    <li>
+                      <pre>kube-apiserver</pre>
+                    </li>
+                    <li>
+                      <pre>etcd</pre>
+                    </li>
+                    <li>
+                      <pre>kube-scheduler</pre>
+                    </li>
+                    <li>
+                      <pre>kube-controller-manager</pre>
+                    </li>
+                    <li>
+                      <pre>cloud-controller-manager</pre>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 131px; height: 126px; left: 269px; top: 327px;"
+              >
+                <div class="sl-block-content" style="z-index: 14;">
+                  <img
+                    style=""
+                    data-natural-width="131"
+                    data-natural-height="126"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6790821/Master.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 89px; height: 89px; left: 870px; top: 23px;"
+              >
+                <div class="sl-block-content" style="z-index: 15;">
+                  <img
+                    style=""
+                    data-natural-width="25"
+                    data-natural-height="25"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6785681/Components.svg"
+                  />
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 637px; left: 322px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align: left;">Componentes</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 600px; left: 340px; top: 121px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(115, 115, 128);"
+                >
+                  <h3>Node(s)</h3>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 475px; left: 325px; top: 216px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 13; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <ul>
+                    <li>
+                      <pre>kubelet</pre>
+                    </li>
+                    <li>
+                      <pre>kube-proxy</pre>
+                    </li>
+                    <li>
+                      <pre>Container Runtime</pre>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 183px; height: 177px; left: 217px; top: 233px;"
+              >
+                <div class="sl-block-content" style="z-index: 14;">
+                  <img
+                    style=""
+                    data-natural-width="183"
+                    data-natural-height="177"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6790825/Node_4.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 89px; height: 89px; left: 870px; top: 23px;"
+              >
+                <div class="sl-block-content" style="z-index: 15;">
+                  <img
+                    style=""
+                    data-natural-width="25"
+                    data-natural-height="25"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6785681/Components.svg"
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="stack">
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 450px; left: 415px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 11;"
+                >
+                  <h1 style="text-align: left;">Créditos</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 534px; left: 34px; top: 144px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 12; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <pre
+                    style="text-align:left"
+                  ><strong>&gt; The Noun Project (Ícones)</strong></pre>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="min-width: 4px; min-height: 4px; width: 109px; height: 75px; left: 756px; top: 35px;"
+              >
+                <div class="sl-block-content" style="z-index: 13;">
+                  <img
+                    style=""
+                    data-natural-width="100"
+                    data-natural-height="69"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6791676/Crown.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; min-width: 30px; min-height: 30px; width: 951px; left: 74px; top: 222px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 14; color: rgb(115, 115, 128); line-height: 0.975;"
+                  dir="ui"
+                  data-has-line-height=""
+                >
+                  <pre
+                    style="text-align:left"
+                  ><span style="font-size:0.7em"><strong>&gt; Question:</strong> <a href="https://thenounproject.com/term/question/1613835" target="_blank">https://thenounproject.com/term/question/1613835
+	
+	</a><strong>&gt; Workshop: </strong><a href="https://thenounproject.com/term/workshop/2063239" target="_blank">https://thenounproject.com/term/workshop/2063239</a><a href="https://thenounproject.com/term/question/1613835" target="_blank">
+	</a>
+	<strong>&gt; Checklist:</strong> <a href="https://thenounproject.com/term/checklist/634354" target="_blank">https://thenounproject.com/term/checklist/634354</a>
+	
+	<strong>&gt; Ship:</strong> <a href="https://thenounproject.com/term/ship/2464422" target="_blank">https://thenounproject.com/term/ship/2464422</a>
+	
+	<strong>&gt; Itinerary:</strong> <a href="https://thenounproject.com/term/itinerary/2737483" target="_blank">https://thenounproject.com/term/itinerary/2737483</a>
+	
+	<strong>&gt; Architecture:</strong> <a href="https://thenounproject.com/term/components/1286164" target="_blank">https://thenounproject.com/term/</a><a href="https://thenounproject.com/term/architecture/2594169" target="_blank">architecture/2594169</a><a href="https://thenounproject.com/term/components/1286164" target="_blank">
+	</a>
+	<strong>&gt; API:</strong> <a href="https://thenounproject.com/term/api/2479337" target="_blank">https://thenounproject.com/term/api/2479337</a>
+	
+	<strong>&gt; Components:</strong> <a href="https://thenounproject.com/term/components/1286164" target="_blank">https://thenounproject.com/term/components/1286164</a>
+	
+	<strong>&gt; Crown:</strong> <a href="https://thenounproject.com/term/crown/4574" target="_blank">https://thenounproject.com/term/crown/4574</a></span></pre>
+                </div>
+              </div>
+            </section>
+            <section data-background-color="#f0f0f5">
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="width: 450px; left: 415px; top: 23px; height: auto;"
+              >
+                <div
+                  class="sl-block-content"
+                  dir="ui"
+                  style="color: rgb(115, 115, 128); z-index: 10;"
+                >
+                  <h1 style="text-align: left;">Créditos</h1>
+                </div>
+              </div>
+
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 534px; left: 34px; top: 144px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 11; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <pre
+                    style="text-align:left"
+                  ><strong>&gt; Simple Icon (Ícones)</strong></pre>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="image"
+                style="width: 109px; height: 75px; left: 756px; top: 35px; min-width: 4px; min-height: 4px;"
+              >
+                <div class="sl-block-content" style="z-index: 13;">
+                  <img
+                    style=""
+                    data-natural-width="100"
+                    data-natural-height="69"
+                    data-lazy-loaded=""
+                    data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/898378/images/6791676/Crown.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 813px; left: 74px; top: 204px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 14; color: rgb(115, 115, 128);"
+                >
+                  <pre
+                    style="text-align:left"
+                  ><span style="font-size:0.7em"><strong>&gt; Github e LinkedIn:</strong> <a href="https://simpleicons.org/" target="_blank">https://simpleicons.org</a></span></pre>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 534px; left: 34px; top: 288px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 16; color: rgb(115, 115, 128); line-height: 2.015;"
+                  data-has-line-height=""
+                >
+                  <pre
+                    style="text-align:left"
+                  ><strong>&gt; dribbble (Animação)</strong></pre>
+                </div>
+              </div>
+              <div
+                class="sl-block"
+                data-block-type="text"
+                style="height: auto; width: 813px; left: 74px; top: 348px;"
+              >
+                <div
+                  class="sl-block-content"
+                  style="z-index: 17; color: rgb(115, 115, 128);"
+                >
+                  <pre
+                    style="text-align:left"
+                  ><span style="font-size:0.7em"><strong>&gt; Ship:</strong> <a href="https://dribbble.com/shots/2433822-Ship" target="_blank">https://dribbble.com/shots/2433822-Ship</a></span></pre>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+				width: 1280,
+				height: 720,
+				transition: "slide",
+				backgroundTransition: "slide",
+				center: false,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
