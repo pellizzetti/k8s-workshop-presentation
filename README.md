@@ -1,3 +1,18 @@
+<h1 align="center">
+    <img alt="[RS/XP] Kubernetes" src="https://user-images.githubusercontent.com/16545335/70004522-50c16600-1545-11ea-822d-17b413e8c95e.png" />
+</h1>
+
+<h1 align="center">
+  Pilotando sua infra na nuvem com Kubernetes
+</h1>
+
+<blockquote>
+  Essa apresentação foi usada no workshop de nome <strong>"Pilotando sua infra na nuvem com Kubernetes"</strong>, apresentada na Rocketseat Experience 2019 em conjunto com esse <a href="https://github.com/pellizzetti/k8s-workshop">repositório</a>.
+</blockquote>
+
+---
+
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://revealjs.com/).
